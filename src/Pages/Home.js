@@ -3,10 +3,10 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <div className="p-5 mb-4 bg-light rounded-3">
+      <div className="p-5 mb-4 bg-light rounded-3 text-center">
         <div className="container-fluid py-5">
           <h1 className="display-5 fw-bold">SDJ International College</h1>
-          <p className="col-md-8 fs-4">Come, be a part of the SDJIC family, and together, let's unlock your potential for a brighter tomorrow.</p>
+          <p className="fs-4">Come, be a part of the SDJIC family, and together, let's unlock your potential for a brighter tomorrow.</p>
           <button className="btn btn-primary btn-lg" type="button">Get Started</button>
         </div>
       </div>

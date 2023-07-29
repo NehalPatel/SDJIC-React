@@ -5,6 +5,9 @@ import About from './Pages/About';
 import Login from './Pages/Login';
 import Error404 from './Pages/Error404';
 import Layout from './Layout';
+import Learn from './Pages/Learn';
+import LearnReact from './Pages/Learn/LearnReact';
+import ReactInstall from './Pages/Learn/ReactInstall';
 
 function App() {
   return (
@@ -15,6 +18,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="learn" element={<Learn />}>
+            <Route index={null} path="react" element={<LearnReact />} />
+            <Route path="install" element={<ReactInstall />} />
+          </Route>
           <Route path="login" element={<Login />} />
           <Route path="*" element={<Error404 />} />
         </Route>
