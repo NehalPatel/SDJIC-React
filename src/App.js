@@ -9,6 +9,11 @@ import LearnReact from './Pages/LearnReact';
 import ReactIntro from './Pages/Learn/ReactIntro';
 import ReactInstall from './Pages/Learn/ReactInstall';
 import ReactForm from './Pages/Learn/ReactForms';
+import WebHooks from './Pages/Learn/WebHooks';
+import WebHooksIntro from './Pages/Learn/webhooks/WebHooksIntro';
+import UseStateDemo from './Pages/Learn/webhooks/UseStateDemo';
+import UseEffectDemo from './Pages/Learn/webhooks/UseEffectDemo';
+import ReactComponent from './Pages/Learn/ReactComponent';
 
 function App() {
   return (
@@ -23,7 +28,13 @@ function App() {
             <Route index element={<ReactIntro />} />
             <Route path="intro" element={<ReactIntro />} />
             <Route path="install" element={<ReactInstall />} />
+            <Route path="component" element={<ReactComponent />} />
             <Route path="forms" element={<ReactForm />} />
+            <Route path="web-hooks" element={<WebHooks />}>
+              <Route path="intro" element={<WebHooksIntro />} />
+              <Route path="use-state" element={<UseStateDemo />} />
+              <Route path="use-effect" element={<UseEffectDemo />} />
+            </Route>
           </Route>
           <Route path="login" element={<Login />} />
           <Route path="*" element={<Error404 />} />

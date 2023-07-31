@@ -23,20 +23,46 @@ const LearnReact = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <a href="/" className="nav-link link-dark">
+                                <NavLink to="/react/component" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
                                 Components
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/react/forms" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"}>
+                                <NavLink to="/react/forms" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
                                 Forms
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="/" className="nav-link link-dark">
-                                <svg className="bi me-2" width="16" height="16"><use xlinkHref="#people-circle"/></svg>
+                                <Link to="/react/web-hooks" className="nav-link link-dark" >
                                 Web Hooks
-                                </a>
+                                </Link>
+                                <ul className="nav nav-pills flex-column mb-auto">
+                                    <li>
+                                        <NavLink to="/react/web-hooks/intro" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                        - Intro
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/use-state" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                        - useState
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/use-effect" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                        - useEffect
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/use-context" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                        - useContext
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/use-ref" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                        - useRef
+                                        </NavLink>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <hr />
