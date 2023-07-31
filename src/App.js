@@ -14,6 +14,7 @@ import WebHooksIntro from './Pages/Learn/webhooks/WebHooksIntro';
 import UseStateDemo from './Pages/Learn/webhooks/UseStateDemo';
 import UseEffectDemo from './Pages/Learn/webhooks/UseEffectDemo';
 import ReactComponent from './Pages/Learn/ReactComponent';
+import UseContextDemo from './Pages/Learn/webhooks/UseContextDemo';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path="intro" element={<WebHooksIntro />} />
               <Route path="use-state" element={<UseStateDemo />} />
               <Route path="use-effect" element={<UseEffectDemo />} />
+              <Route path="use-context" element={<UseContextDemo />} />
             </Route>
           </Route>
           <Route path="login" element={<Login />} />
