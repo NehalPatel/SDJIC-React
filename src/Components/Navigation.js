@@ -7,7 +7,7 @@ const Navigation = () => {
       <Link className="me-3 py-2 text-dark text-decoration-none" to="/">Home</Link>
       <Link className="me-3 py-2 text-dark text-decoration-none" to="/contact">Contact</Link>
       <Link className="me-3 py-2 text-dark text-decoration-none" to="/about">About</Link>
-      <Link className="me-3 py-2 text-dark text-decoration-none" to="/learn">Learn</Link>
+      <Link className="me-3 py-2 text-dark text-decoration-none" to="/react">React</Link>
       <Link className="py-2 text-dark text-decoration-none" to="/login">Login</Link>
     </nav>
   );

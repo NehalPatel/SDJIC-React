@@ -1,40 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
-const Learn = () => {
+const LearnReact = () => {
     return (
         <>
             <div className="row">
                 <div className="col-sm-3">
                     <div className="d-flex flex-column flex-shrink-0 p-3 bg-light">
-                        <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                        <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"/></svg>
-                        <span className="fs-4">Learn React</span>
-                        </a>
+                        <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                            <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"/></svg>
+                            <span className="fs-4">Learn React</span>
+                        </Link>
                         <hr />
                         <ul className="nav nav-pills flex-column mb-auto">
                             <li className="nav-item">
-                                <Link to="/learn/react" className="nav-link active" aria-current="page">
-                                <svg className="bi me-2" width="16" height="16"><use xlinkHref="#home"/></svg>
-                                Intro
-                                </Link>
+                                <NavLink to="/react/intro" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} aria-current="page">
+                                    Intro
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/learn/install" className="nav-link link-dark">
-                                <svg className="bi me-2" width="16" height="16"><use xlinkHref="#speedometer2"/></svg>
-                                Installation
-                                </Link>
+                                <NavLink to="/react/install" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                    Installation
+                                </NavLink>
                             </li>
                             <li>
                                 <a href="/" className="nav-link link-dark">
-                                <svg className="bi me-2" width="16" height="16"><use xlinkHref="#table"/></svg>
                                 Components
                                 </a>
                             </li>
                             <li>
-                                <a href="/" className="nav-link link-dark">
-                                <svg className="bi me-2" width="16" height="16"><use xlinkHref="#grid"/></svg>
+                                <Link to="/react/forms" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"}>
                                 Forms
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="/" className="nav-link link-dark">
@@ -52,10 +48,12 @@ const Learn = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-9"></div>
+                <div className="col-sm-9">
+                    <Outlet />
+                </div>
             </div>
         </>
     )
 }
 
-export default Learn;
+export default LearnReact;

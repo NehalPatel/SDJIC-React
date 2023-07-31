@@ -1,4 +1,4 @@
-const LearnReact = () => {
+const ReactIntro = () => {
     return (
         <>
         <h3>What is React?</h3>
@@ -9,4 +9,4 @@ const LearnReact = () => {
     );
 }
 
-export default LearnReact;
+export default ReactIntro;
