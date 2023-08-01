@@ -6,7 +6,7 @@ function Form1() {
 
     return (
         <div className="row">
-            <div className="col-sm-9">
+            <div className="col-sm-6">
                 <form>
                     <div className="mb-3">
                         <label htmlFor="userName" className="form-label">User Name</label>
@@ -31,7 +31,7 @@ function Form1() {
                     </div>
                 </form>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-6">
                 <p><b className='mt-3'>Username:</b> {name}</p>
                 <p><b>Email:</b> {email}</p>
             </div>

@@ -2,14 +2,14 @@ import { useState } from 'react';
 
 function Form3() {
     const [inputs, setInputs] = useState({
-        username : '',
-        useremail : ''
+        username: '',
+        useremail: ''
     });
 
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}))
+        setInputs(values => ({ ...values, [name]: value }))
     }
 
     const handleSubmit = (event) => {
@@ -19,7 +19,7 @@ function Form3() {
 
     return (
         <div className="row">
-            <div className="col-sm-9">
+            <div className="col-sm-6">
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label htmlFor="userName" className="form-label">User Name</label>
@@ -48,7 +48,7 @@ function Form3() {
                     <button type="submit" className="btn btn-primary mb-3">Submit</button>
                 </form>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-6">
                 <p><b className='mt-3'>Username:</b> {inputs.username}</p>
                 <p><b>Email:</b> {inputs.useremail}</p>
             </div>
