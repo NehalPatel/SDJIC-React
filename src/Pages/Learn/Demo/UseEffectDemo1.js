@@ -4,10 +4,10 @@ function UseEffectDemo1() {
     const [count, setCount] = useState(0);
     const [name, setName] = useState("");
 
-    useEffect(()=>{
+    useEffect(() => {
         document.title = `Count: ${count}`;
         console.log('state variable changes');
-    },[count]);
+    }, [count]);
     //try using dependencies
     //[], [count], [count, name]
 
@@ -17,19 +17,19 @@ function UseEffectDemo1() {
             <b>Counter : {count}</b> <br />
             <button
                 className="btn btn-primary mx-2"
-                onClick={() => setCount(count+1)}
+                onClick={() => setCount(count + 1)}
             >
                 +1
             </button>
             <button
                 className="btn btn-primary mx-2"
-                onClick={() => setCount(count+10)}
+                onClick={() => setCount(count + 10)}
             >
                 +10
             </button>
             <button
                 className="btn btn-primary mx-2"
-                onClick={() => setCount(count+100)}
+                onClick={() => setCount(count + 100)}
             >
                 +100
             </button>

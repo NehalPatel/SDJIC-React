@@ -8,13 +8,22 @@ function UseStateDemo3() {
         color: "red"
     });
 
+    const handleChange = (e) => {
+        const newCar = { ...car, color: e.target.value };
+        setCar(newCar);
+    };
+
     return (
         <>
             <h3>Demo 3</h3>
             <h1>My {car.brand}</h1>
             <p>
-                It is a {car.color} {car.model} from {car.year}.
+                It is a <b>{car.color}</b> {car.model} from {car.year}.
             </p>
+            <input
+                type="text"
+                onChange={handleChange}
+                placeholder="Provide Color" />
         </>
     );
 }

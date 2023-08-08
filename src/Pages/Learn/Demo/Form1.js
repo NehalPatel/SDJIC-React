@@ -11,7 +11,7 @@ function Form1() {
                     <div className="mb-3">
                         <label htmlFor="userName" className="form-label">User Name</label>
                         <input
-                            type="name"
+                            type="text"
                             className="form-control"
                             placeholder="your name goes here"
                             value={name}

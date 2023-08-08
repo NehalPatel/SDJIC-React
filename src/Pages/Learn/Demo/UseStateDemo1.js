@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function UseStateDemo1() {
-    const [favColor, setColor] = useState("No-Color");
+    const [favColor, setColor] = useState("Rainbow");
 
     return (
         <>
