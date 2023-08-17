@@ -10,6 +10,7 @@ import ReactIntro from './Pages/Learn/ReactIntro';
 import ReactInstall from './Pages/Learn/ReactInstall';
 import ReactForm from './Pages/Learn/ReactForms';
 import WebHooks from './Pages/Learn/WebHooks';
+import ReactMemo from './Pages/Learn/ReactMemo';
 import WebHooksIntro from './Pages/Learn/webhooks/WebHooksIntro';
 import UseStateDemo from './Pages/Learn/webhooks/UseStateDemo';
 import UseEffectDemo from './Pages/Learn/webhooks/UseEffectDemo';
@@ -32,6 +33,7 @@ function App() {
               <Route path="install" element={<ReactInstall />} />
               <Route path="component" element={<ReactComponent />} />
               <Route path="forms" element={<ReactForm />} />
+              <Route path="memo" element={<ReactMemo />} />
               <Route path="web-hooks" element={<WebHooks />}>
                 <Route path="intro" element={<WebHooksIntro />} />
                 <Route path="use-state" element={<UseStateDemo />} />

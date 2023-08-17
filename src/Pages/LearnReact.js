@@ -7,7 +7,7 @@ const LearnReact = () => {
                 <div className="col-sm-3">
                     <div className="d-flex flex-column flex-shrink-0 p-3 bg-light">
                         <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                            <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"/></svg>
+                            <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap" /></svg>
                             <span className="fs-4">Learn React</span>
                         </Link>
                         <hr />
@@ -24,42 +24,47 @@ const LearnReact = () => {
                             </li>
                             <li>
                                 <NavLink to="/react/component" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
-                                Components
+                                    Components
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink to="/react/forms" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
-                                Forms
+                                    Forms
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/react/memo" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                    Memo
                                 </NavLink>
                             </li>
                             <li>
                                 <Link to="/react/web-hooks" className="nav-link link-dark" >
-                                Web Hooks
+                                    Web Hooks
                                 </Link>
                                 <ul className="nav nav-pills flex-column mb-auto">
                                     <li>
                                         <NavLink to="/react/web-hooks/intro" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
-                                        - Intro
+                                            - Intro
                                         </NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/react/web-hooks/use-state" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
-                                        - useState
+                                            - useState
                                         </NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/react/web-hooks/use-effect" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
-                                        - useEffect
+                                            - useEffect
                                         </NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/react/web-hooks/use-context" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
-                                        - useContext
+                                            - useContext
                                         </NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/react/web-hooks/use-ref" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
-                                        - useRef
+                                            - useRef
                                         </NavLink>
                                     </li>
                                 </ul>
@@ -67,10 +72,10 @@ const LearnReact = () => {
                         </ul>
                         <hr />
                         <div className="dropdown">
-                        <a href="/" className="d-flex align-items-center text-decoration-none">
-                            <img src="https://avatars.githubusercontent.com/u/1838272?v=4" alt="" width="32" height="32" className="rounded-circle me-2" />
-                            <strong>Nehal Patel</strong>
-                        </a>
+                            <a href="/" className="d-flex align-items-center text-decoration-none">
+                                <img src="https://avatars.githubusercontent.com/u/1838272?v=4" alt="" width="32" height="32" className="rounded-circle me-2" />
+                                <strong>Nehal Patel</strong>
+                            </a>
                         </div>
                     </div>
                 </div>
