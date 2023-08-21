@@ -17,6 +17,7 @@ import UseEffectDemo from './Pages/Learn/webhooks/UseEffectDemo';
 import ReactComponent from './Pages/Learn/ReactComponent';
 import UseContextDemo from './Pages/Learn/webhooks/UseContextDemo';
 import UseRefDemo from './Pages/Learn/webhooks/UseRefDemo';
+import UseReducerDemo from './Pages/Learn/webhooks/useReducerDemo';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
                 <Route path="use-effect" element={<UseEffectDemo />} />
                 <Route path="use-context" element={<UseContextDemo />} />
                 <Route path="use-ref" element={<UseRefDemo />} />
+                <Route path="use-reducer" element={<UseReducerDemo />} />
               </Route>
             </Route>
             <Route path="login" element={<Login />} />

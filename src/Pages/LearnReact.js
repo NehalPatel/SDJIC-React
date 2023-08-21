@@ -67,6 +67,26 @@ const LearnReact = () => {
                                             - useRef
                                         </NavLink>
                                     </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/use-reducer" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                            - useReducer
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/use-callback" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                            - useCallback
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/use-memo" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                            - useMemo
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/react/web-hooks/custom-hook" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                            - customHook
+                                        </NavLink>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
