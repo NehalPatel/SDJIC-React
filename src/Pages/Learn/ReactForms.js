@@ -15,20 +15,20 @@ function ReactForm() {
                 </div>
             </div>
             <hr />
-            <div class="card">
-                <div class="card-header">
+            <div className="card">
+                <div className="card-header">
                     <h5>Form 2</h5>
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                     <Form2 />
                 </div>
             </div>
             <hr />
-            <div class="card">
-                <div class="card-header">
+            <div className="card">
+                <div className="card-header">
                     <h5>Form 3</h5>
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                     <Form3 />
                 </div>
             </div>

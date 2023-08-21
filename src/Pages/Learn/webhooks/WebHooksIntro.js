@@ -1,7 +1,7 @@
 function WebHooksIntro() {
     return (
         <>
-            <p class="intro">Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.</p>
+            <p className="intro">Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.</p>
             <hr />
             <h3>What are WebHooks?</h3>
             <p>Hooks allow us to "hook" into React features such as state and lifecycle methods.</p>
