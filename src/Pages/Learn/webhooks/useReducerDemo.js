@@ -1,5 +1,6 @@
 import UseReducerDemo1 from "../Demo/UseReducerDemo1";
 import UseReducerDemo2 from "../Demo/UseReducerDemo2";
+import UseReducerDemo3 from "../Demo/UseReducerDemo3";
 
 function UseReducerDemo() {
     return (
@@ -27,6 +28,14 @@ function UseReducerDemo() {
                 <div className="card-header">
                     <h3>Shopping Cart</h3>
                     <UseReducerDemo2 />
+                </div>
+            </div>
+
+            <hr />
+            <div className="card">
+                <div className="card-header">
+                    <h3>Shopping Cart</h3>
+                    <UseReducerDemo3 />
                 </div>
             </div>
         </>

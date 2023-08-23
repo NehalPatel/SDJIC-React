@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 
 const addToCart = (state, action) => {
     switch (action.type) {
@@ -24,10 +24,14 @@ const addToCart = (state, action) => {
 
 function UseReducerDemo1() {
 
+    const price = 100;
     const [qty, dispatch] = useReducer(addToCart, 1);
+    const [total, setTotal] = useState(0);
 
     const changeQty = (operation) => {
         dispatch({ type: operation })
+
+        setTotal(qty * price);
     }
 
     return (
@@ -52,11 +56,11 @@ function UseReducerDemo1() {
                             &nbsp; {qty} &nbsp;
                             <button onClick={() => changeQty("increment")}>+</button>
                         </td>
-                        <td>100</td>
+                        <td>{total}</td>
                     </tr>
                     <tr>
                         <td colSpan="4" align="right"><b>Grand Total:</b></td>
-                        <td>100</td>
+                        <td>{total}</td>
                     </tr>
                 </tbody>
             </table>
