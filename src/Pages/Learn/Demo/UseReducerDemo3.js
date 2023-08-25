@@ -31,9 +31,9 @@ function UseReducerDemo3() {
     return (
         <div>
             <h1>Counter</h1>
-            <p>The current count is {state.count}</p>
-            <button className="btn btn-primary" onClick={() => handleAction("increment")}>+</button>
-            <button className="btn btn-danger" onClick={() => handleAction("decrement")}>-</button>
+            <p>The current count is <b style={{ fontSize: "34px" }}>{state.count}</b></p>
+            <button className="btn btn-primary" onClick={() => handleAction("increment")}>+</button>&nbsp;
+            <button className="btn btn-danger" onClick={() => handleAction("decrement")}>-</button>&nbsp;
             <button className="btn btn-warning" onClick={() => handleAction("reset")}>Reset</button>
         </div>
     );

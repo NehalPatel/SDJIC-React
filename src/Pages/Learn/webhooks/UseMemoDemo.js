@@ -1,7 +1,7 @@
-import MemoProblem from "./Demo/MemoProblem";
-import MemoSolution from "./Demo/MemoSolution";
+import MemoProblem from "../Demo/MemoProblem";
+import MemoSolution from "../Demo/MemoSolution";
 
-function ReactMemo() {
+function UseMemoDemo() {
     return (
         <>
             <h3>React Memo</h3>
@@ -30,4 +30,4 @@ function ReactMemo() {
     );
 }
 
-export default ReactMemo;
+export default UseMemoDemo;

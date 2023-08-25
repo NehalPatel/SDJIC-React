@@ -5,17 +5,17 @@ export const Context = createContext();
 
 function UseContextDemo2() {
     const [user, setUser] = useState({
-        name : "Devashya Patel",
-        age : 12
+        name: "Devashya Patel",
+        age: 12
     });
 
-    return ( 
+    return (
         <>
             <Context.Provider value={user}>
                 <Component1 />
             </Context.Provider>
         </>
-     );
+    );
 }
 
 export default UseContextDemo2;

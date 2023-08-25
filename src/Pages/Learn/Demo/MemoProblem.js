@@ -3,7 +3,11 @@ import Todos from "./Todos";
 
 function MemoProblem() {
     const [count, setCount] = useState(0);
-    const [todos, setTodos] = useState(["Prepare React Demo 👨‍💻", "Wash Car 🚗", "Walk in Garden 🚶‍♂️"]);
+    const [todos, setTodos] = useState([
+        "Prepare React Demo 👨‍💻",
+        "Wash Car 🚗",
+        "Walk in Garden 🚶‍♂️"
+    ]);
     const [newTodo, setNewTodo] = useState("");
 
     const increment = () => {

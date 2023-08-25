@@ -26,7 +26,7 @@ function UseReducerDemo1() {
 
     const price = 100;
     const [qty, dispatch] = useReducer(addToCart, 1);
-    const [total, setTotal] = useState(0);
+    const [total, setTotal] = useState(100);
 
     const changeQty = (operation) => {
         dispatch({ type: operation })
