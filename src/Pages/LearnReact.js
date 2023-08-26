@@ -28,6 +28,11 @@ const LearnReact = () => {
                                 </NavLink>
                             </li>
                             <li>
+                                <NavLink to="/react/props" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                    Props
+                                </NavLink>
+                            </li>
+                            <li>
                                 <NavLink to="/react/forms" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
                                     Forms
                                 </NavLink>

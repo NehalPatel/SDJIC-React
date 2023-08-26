@@ -18,6 +18,8 @@ import UseContextDemo from './Pages/Learn/webhooks/UseContextDemo';
 import UseRefDemo from './Pages/Learn/webhooks/UseRefDemo';
 import UseReducerDemo from './Pages/Learn/webhooks/useReducerDemo';
 import UseMemoDemo from './Pages/Learn/webhooks/UseMemoDemo';
+import UseCallbackDemo from './Pages/Learn/webhooks/UseCallbackDemo';
+import ReactProps from './Pages/Learn/ReactProps';
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
               <Route path="intro" element={<ReactIntro />} />
               <Route path="install" element={<ReactInstall />} />
               <Route path="component" element={<ReactComponent />} />
+              <Route path="props" element={<ReactProps />} />
               <Route path="forms" element={<ReactForm />} />
               <Route path="web-hooks" element={<WebHooks />}>
                 <Route path="intro" element={<WebHooksIntro />} />
@@ -42,6 +45,7 @@ function App() {
                 <Route path="use-ref" element={<UseRefDemo />} />
                 <Route path="use-reducer" element={<UseReducerDemo />} />
                 <Route path="use-memo" element={<UseMemoDemo />} />
+                <Route path="use-callback" element={<UseCallbackDemo />} />
               </Route>
             </Route>
             <Route path="login" element={<Login />} />
