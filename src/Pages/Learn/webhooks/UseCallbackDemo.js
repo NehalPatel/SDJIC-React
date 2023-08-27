@@ -1,4 +1,5 @@
-import CallBackProblem from "../Demo/CallbackProblem";
+import UseCallBackProblem from "../Demo/UseCallbackProblem";
+import UseCallbackSolution from "../Demo/UseCallbackSolution";
 
 function UseCallbackDemo() {
     return (
@@ -12,7 +13,7 @@ function UseCallbackDemo() {
                     <p>In this example, you might think that the <code>Todos</code> component will not re-render unless the <code>todos</code> change:</p>
                 </div>
                 <div className="card-body">
-                    <CallBackProblem />
+                    <UseCallBackProblem />
                 </div>
             </div>
 
@@ -25,7 +26,7 @@ function UseCallbackDemo() {
                     <p>In this example, you might think that the <code>Todos</code> component will not re-render unless the <code>todos</code> change:</p>
                 </div>
                 <div className="card-body">
-                    <CallBackProblem />
+                    <UseCallbackSolution />
                 </div>
             </div>
 

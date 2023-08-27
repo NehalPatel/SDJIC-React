@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import TodosCallback from "./TodosCallback";
 
-function CallBackProblem() {
+function UseCallbackSolution() {
     const [count, setCount] = useState(0);
     const [todos, setTodos] = useState([
         "Prepare React Demo 👨‍💻",
@@ -12,20 +12,24 @@ function CallBackProblem() {
     const increment = () => {
         setCount((c) => c + 1);
     };
-    const addTodo = () => {
+    // const addTodo = () => {
+    //     setTodos((t) => [...t, "New Todo"]);
+    // };
+
+    const addTodo = useCallback(() => {
         setTodos((t) => [...t, "New Todo"]);
-    };
+    }, [todos]);
 
     return (
         <>
             <TodosCallback todos={todos} addTodo={addTodo} />
             <hr />
             <div>
-                Count: {count}
-                <button onClick={increment}>+</button>
+                Count: {count} <br />
+                <button className="btn btn-warning" onClick={increment}>+</button>
             </div>
         </>
     );
 }
 
-export default CallBackProblem;
+export default UseCallbackSolution;
