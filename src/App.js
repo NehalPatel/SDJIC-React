@@ -21,6 +21,7 @@ import UseMemoDemo from './Pages/Learn/webhooks/UseMemoDemo';
 import UseCallbackDemo from './Pages/Learn/webhooks/UseCallbackDemo';
 import ReactProps from './Pages/Learn/ReactProps';
 import ReactMemo from './Pages/Learn/ReactMemo';
+import CustomHook from './Pages/Learn/webhooks/CustomHook';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
                 <Route path="use-reducer" element={<UseReducerDemo />} />
                 <Route path="use-memo" element={<UseMemoDemo />} />
                 <Route path="use-callback" element={<UseCallbackDemo />} />
+                <Route path="custom-hook" element={<CustomHook />} />
               </Route>
             </Route>
             <Route path="login" element={<Login />} />
