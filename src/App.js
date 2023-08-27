@@ -20,6 +20,7 @@ import UseReducerDemo from './Pages/Learn/webhooks/useReducerDemo';
 import UseMemoDemo from './Pages/Learn/webhooks/UseMemoDemo';
 import UseCallbackDemo from './Pages/Learn/webhooks/UseCallbackDemo';
 import ReactProps from './Pages/Learn/ReactProps';
+import ReactMemo from './Pages/Learn/ReactMemo';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
               <Route path="component" element={<ReactComponent />} />
               <Route path="props" element={<ReactProps />} />
               <Route path="forms" element={<ReactForm />} />
+              <Route path="memo" element={<ReactMemo />} />
               <Route path="web-hooks" element={<WebHooks />}>
                 <Route path="intro" element={<WebHooksIntro />} />
                 <Route path="use-state" element={<UseStateDemo />} />
