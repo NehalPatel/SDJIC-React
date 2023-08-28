@@ -9,10 +9,10 @@ function UseCallbackDemo() {
             <div className="card">
                 <div className="card-header">
                     <h5>Problem</h5>
-                    <p>One reason to use <code>useCallback</code> is to prevent a component from re-rendering unless its props have changed.</p>
-                    <p>In this example, you might think that the <code>Todos</code> component will not re-render unless the <code>todos</code> change:</p>
                 </div>
                 <div className="card-body">
+                    <p>One reason to use <code>useCallback</code> is to prevent a component from re-rendering unless its props have changed.</p>
+                    <p>In this example, you might think that the <code>Todos</code> component will not re-render unless the <code>todos</code> change:</p>
                     <UseCallBackProblem />
                 </div>
             </div>
@@ -22,10 +22,10 @@ function UseCallbackDemo() {
             <div className="card">
                 <div className="card-header">
                     <h5>Solution</h5>
-                    <p>One reason to use <code>useCallback</code> is to prevent a component from re-rendering unless its props have changed.</p>
-                    <p>In this example, you might think that the <code>Todos</code> component will not re-render unless the <code>todos</code> change:</p>
                 </div>
                 <div className="card-body">
+                    <p>One reason to use <code>useCallback</code> is to prevent a component from re-rendering unless its props have changed.</p>
+                    <p>In this example, you might think that the <code>Todos</code> component will not re-render unless the <code>todos</code> change:</p>
                     <UseCallbackSolution />
                 </div>
             </div>

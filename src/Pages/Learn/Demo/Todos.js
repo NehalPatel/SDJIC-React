@@ -6,6 +6,9 @@ function Todos({ todos }) {
     useEffect(() => {
         renderCount.current = renderCount.current + 1;
     });
+
+    console.log("Todos.js component rendered");
+
     return (
         <>
             <h2>My Todos</h2>

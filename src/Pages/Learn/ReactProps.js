@@ -6,10 +6,6 @@ function ReactProps() {
     const code2 = '<Welcome name={college} />';
     const code3 = '<UserInfo user={user} />';
     const code4 = '<UserInfo2 name="Devashya Patel" age="21" />';
-    const code5 = `<UserInfo3>;
-        Hello Mr. Devashya Patel
-        I am a student of SDJIC and I'm 21 years old.
-    </UserInfo3>`;
 
     const college = "SDJ International College";
     const user = { name: "Devashya Patel", age: 21 };
