@@ -22,6 +22,7 @@ import UseCallbackDemo from './Pages/Learn/webhooks/UseCallbackDemo';
 import ReactProps from './Pages/Learn/ReactProps';
 import ReactMemo from './Pages/Learn/ReactMemo';
 import CustomHook from './Pages/Learn/webhooks/CustomHook';
+import ReactStyles from './Pages/Learn/ReactStyles';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
               <Route path="props" element={<ReactProps />} />
               <Route path="forms" element={<ReactForm />} />
               <Route path="memo" element={<ReactMemo />} />
+              <Route path="styles" element={<ReactStyles />} />
               <Route path="web-hooks" element={<WebHooks />}>
                 <Route path="intro" element={<WebHooksIntro />} />
                 <Route path="use-state" element={<UseStateDemo />} />

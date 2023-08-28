@@ -43,6 +43,11 @@ const LearnReact = () => {
                                 </NavLink>
                             </li>
                             <li>
+                                <NavLink to="/react/styles" className={({ isActive }) => isActive ? "nav-link active" : "nav-link link-dark"} >
+                                    CSS Styles
+                                </NavLink>
+                            </li>
+                            <li>
                                 <Link to="/react/web-hooks" className="nav-link link-dark" >
                                     Web Hooks
                                 </Link>
