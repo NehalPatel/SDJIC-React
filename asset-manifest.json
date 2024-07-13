@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SDJIC-React/static/css/main.0bc14204.css",
+    "main.js": "/SDJIC-React/static/js/main.b65447f6.js",
+    "index.html": "/SDJIC-React/index.html",
+    "main.0bc14204.css.map": "/SDJIC-React/static/css/main.0bc14204.css.map",
+    "main.b65447f6.js.map": "/SDJIC-React/static/js/main.b65447f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bc14204.css",
+    "static/js/main.b65447f6.js"
+  ]
+}
