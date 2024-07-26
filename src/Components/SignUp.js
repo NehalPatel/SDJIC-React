@@ -29,7 +29,7 @@ const SignUp = () => {
         e.preventDefault();
 
         try {
-            const { user } = await registerNewUser({ email, password });
+            const { user } = await registerNewUser(email, password);
 
             await createUserDocumentFromAuth(user, { displayName, mobile });
 
