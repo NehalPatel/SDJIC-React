@@ -1,28 +1,28 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import Contact from './Pages/Contact';
-import About from './Pages/About';
-import Login from './Pages/Login';
-import Error404 from './Pages/Error404';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './Layout';
-import LearnReact from './Pages/LearnReact';
-import ReactIntro from './Pages/Learn/ReactIntro';
-import ReactInstall from './Pages/Learn/ReactInstall';
-import ReactForm from './Pages/Learn/ReactForms';
-import WebHooks from './Pages/Learn/WebHooks';
-import WebHooksIntro from './Pages/Learn/webhooks/WebHooksIntro';
-import UseStateDemo from './Pages/Learn/webhooks/UseStateDemo';
-import UseEffectDemo from './Pages/Learn/webhooks/UseEffectDemo';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Error404 from './Pages/Error404';
+import Home from './Pages/Home';
 import ReactComponent from './Pages/Learn/ReactComponent';
-import UseContextDemo from './Pages/Learn/webhooks/UseContextDemo';
-import UseRefDemo from './Pages/Learn/webhooks/UseRefDemo';
-import UseReducerDemo from './Pages/Learn/webhooks/useReducerDemo';
-import UseMemoDemo from './Pages/Learn/webhooks/UseMemoDemo';
-import UseCallbackDemo from './Pages/Learn/webhooks/UseCallbackDemo';
-import ReactProps from './Pages/Learn/ReactProps';
+import ReactForm from './Pages/Learn/ReactForms';
+import ReactInstall from './Pages/Learn/ReactInstall';
+import ReactIntro from './Pages/Learn/ReactIntro';
 import ReactMemo from './Pages/Learn/ReactMemo';
-import CustomHook from './Pages/Learn/webhooks/CustomHook';
+import ReactProps from './Pages/Learn/ReactProps';
 import ReactStyles from './Pages/Learn/ReactStyles';
+import WebHooks from './Pages/Learn/WebHooks';
+import CustomHook from './Pages/Learn/webhooks/CustomHook';
+import UseCallbackDemo from './Pages/Learn/webhooks/UseCallbackDemo';
+import UseContextDemo from './Pages/Learn/webhooks/UseContextDemo';
+import UseEffectDemo from './Pages/Learn/webhooks/UseEffectDemo';
+import UseMemoDemo from './Pages/Learn/webhooks/UseMemoDemo';
+import UseRefDemo from './Pages/Learn/webhooks/UseRefDemo';
+import UseStateDemo from './Pages/Learn/webhooks/UseStateDemo';
+import WebHooksIntro from './Pages/Learn/webhooks/WebHooksIntro';
+import UseReducerDemo from './Pages/Learn/webhooks/useReducerDemo';
+import LearnReact from './Pages/LearnReact';
+import UserAuth from './Pages/UserAuth';
 
 function App() {
   return (
@@ -54,7 +54,7 @@ function App() {
                 <Route path="custom-hook" element={<CustomHook />} />
               </Route>
             </Route>
-            <Route path="login" element={<Login />} />
+            <Route path="login" element={<UserAuth />} />
             <Route path="*" element={<Error404 />} />
           </Route>
         </Routes>
