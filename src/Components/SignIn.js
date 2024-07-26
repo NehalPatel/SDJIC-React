@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
     createUserDocumentFromAuth,
     loginUser,
     signInWithGooglePopup
 } from "../Util/firebase";
+import { UserContext } from "../context/user.context";
 
 const defaultFormFields = {
     email: '',
@@ -14,9 +15,18 @@ const SignIn = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { email, password } = formFields;
 
+    const { setCurrentUser } = useContext(UserContext);
+
     const logGoogleUser = async () => {
-        const { user } = await signInWithGooglePopup();
-        createUserDocumentFromAuth(user);
+        try {
+            const { user } = await signInWithGooglePopup();
+            createUserDocumentFromAuth(user);
+
+            setCurrentUser(user);
+
+        } catch (error) {
+            console.log(error.message);
+        }
     }
 
     const handleChange = (event) => {
@@ -33,9 +43,11 @@ const SignIn = () => {
         e.preventDefault();
 
         try {
-            const response = await loginUser(email, password);
+            const { user } = await loginUser(email, password);
 
-            console.log(response);
+            setCurrentUser(user);
+
+            console.log(user);
             resetFormFields();
 
         } catch (error) {
@@ -64,7 +76,8 @@ const SignIn = () => {
                     name="email"
                     onChange={handleChange}
                     value={email}
-                    placeholder="name@example.com" />
+                    placeholder="name@example.com"
+                    required />
             </div>
             <div className="mb-3">
                 <label htmlFor="password" className="form-label">Password</label>
@@ -75,7 +88,8 @@ const SignIn = () => {
                     name="password"
                     onChange={handleChange}
                     value={password}
-                    placeholder="Password" />
+                    placeholder="Password"
+                    required />
             </div>
             <div className="mb-3 form-check">
                 <input type="checkbox" className="form-check-input" id="rememberMe" />
