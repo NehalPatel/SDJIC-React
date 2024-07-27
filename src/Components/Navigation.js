@@ -4,11 +4,11 @@ import { UserContext } from '../context/user.context';
 import { signOutUser } from '../Util/firebase';
 
 const Navigation = () => {
-  const { currentUser } = useContext(UserContext);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
 
-  const signOut = async () => {
+  const signOutHandler = async () => {
     await signOutUser();
-    console.log(currentUser);
+    setCurrentUser(null);
   }
 
   return (
@@ -18,7 +18,7 @@ const Navigation = () => {
       <Link className="me-3 py-2 text-dark text-decoration-none" to="/about">About</Link>
       <Link className="me-3 py-2 text-dark text-decoration-none" to="/react">React</Link>
       {currentUser ? (
-        <span className="me-3 py-2 text-dark text-decoration-none" onClick={signOut}>Logout</span>
+        <span className="me-3 py-2 text-dark text-decoration-none" onClick={signOutHandler}>Logout</span>
       ) : (
         <Link className="py-2 text-dark text-decoration-none" to="/login">Login</Link>
       )}
