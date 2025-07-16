@@ -4,7 +4,7 @@ function Form2() {
     const [name, setName] = useState("");
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         alert(`The name you entered was: ${name}`)
     }
 

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 function UseRefSolution() {
     const [name, setName] = useState("SDJIC");
     const renderCount = useRef(0);
+    // rendercount{current: 0}
 
     useEffect(() => {
         renderCount.current = renderCount.current + 1

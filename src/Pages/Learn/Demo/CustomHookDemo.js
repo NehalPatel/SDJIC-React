@@ -1,4 +1,4 @@
-import useFetch from "./useFetch";
+import useFetch from './useFetch';
 
 function CustomHookDemo() {
     // const [data, setData] = useState(null);
@@ -9,8 +9,8 @@ function CustomHookDemo() {
     //         .then((data) => setData(data));
     // }, []);
 
-    //const [data] = useFetch("todos?_limit=20");
-    const [data] = useFetch("posts?_limit=20");
+    const [data] = useFetch("users?_limit=20");
+    // const [data] = useFetch("posts?_limit=20");
 
     return (
         <>

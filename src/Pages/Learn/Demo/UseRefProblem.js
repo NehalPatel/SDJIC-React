@@ -5,8 +5,8 @@ function UseRefProblem() {
     const [renderCount, setRenderCount] = useState(0);
 
     useEffect(() => {
-        //setRenderCount(renderCount + 1);
-        console.log("name state variable changed");
+        setRenderCount(renderCount + 1);
+        //console.log("name state variable changed");
     });
 
     return (

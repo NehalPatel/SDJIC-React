@@ -1,14 +1,16 @@
 import { useState } from 'react';
 
 function Form3() {
-    const [inputs, setInputs] = useState({
-        username: '',
-        useremail: ''
-    });
+    const [inputs, setInputs] = useState(
+        {
+            username: '',
+            useremail: ''
+        }
+    );
 
     const handleChange = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
+        const name = event.target.name; //useremail
+        const value = event.target.value; //sdjic@gmail.com
         setInputs(values => ({ ...values, [name]: value }))
     }
 
