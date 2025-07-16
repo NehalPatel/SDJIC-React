@@ -1,16 +1,16 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../context/user.context';
 import { signOutUser } from '../Util/firebase';
 
 const Navigation = () => {
-  const { currentUser } = useContext(UserContext);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
 
   const displayName = currentUser?.displayName || "User";
 
   const logout = async () => {
     await signOutUser();
-    console.log(currentUser);
+    setCurrentUser(null);
   }
 
   return (
