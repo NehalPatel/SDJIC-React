@@ -2,7 +2,6 @@
   "name": "sdjic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://NehalPatel.github.io/SDJIC-React",
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
